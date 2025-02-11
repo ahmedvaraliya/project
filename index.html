@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="header-text">Welcome to the Online Calculator</h1>
+  </header>
+    <div class="container">
+      <input type="text" id="flex" readonly />
+      <div class="calculator-button">
+        <button
+          class="btn"
+          onclick="currentDisplay =''; document.querySelector('#flex').value = currentDisplay; "
+        >
+          C
+        </button>
+
+        <button class="btn" 
+        onclick=" currentDisplay = currentDisplay + '1'; document.querySelector('#flex').value = currentDisplay;">
+          1
+        </button>
+
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '2'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          2
+        </button>
+
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '+'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          +
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '3'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          3
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '4'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          4
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '-'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          -
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '5'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          5
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '6'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          6
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '*'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          *
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '7'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          7
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '8'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          8
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '/'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          /
+        </button>
+        <button
+          class="btn"
+          onclick=" let result = eval(currentDisplay); currentDisplay = result; document.querySelector('#flex').value = currentDisplay;"
+        >
+          =
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '9'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          9
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '0'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          0
+        </button>
+        <button
+          class="btn"
+          onclick=" currentDisplay = currentDisplay + '.'; document.querySelector('#flex').value = currentDisplay;"
+        >
+          .
+        </button>
+      </div>
+    </div>
+    <footer>
+      <p id="footer-text">Simple Calculator – Fast and Accurate Results, Anytime, Anywhere. Powered by [Ahmed Varaliya].</p>
+        <br>
+     <p id="footer-text"> "Simplify your calculations with QuickCalc. Fast, reliable, and free!" </p>
+      <br>
+      <p id="footer-text">© 2025 CalculatorWebsiteName. All Rights Reserved.</p>
+  </footer>
+    <script src="calculator.js"></script>
+  </body>
+</html>

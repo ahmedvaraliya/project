@@ -1,0 +1,68 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(88, 98, 88);
+/* background-color: #F7F7F7; */
+}
+
+.container {
+  margin-top: 35px !important;
+  display: block;
+  border: 2px solid rgb(137, 135, 135);
+  width: 250px;
+  border-radius: 8px;
+  margin: auto;
+}
+ #flex {
+  border-radius: 7px;
+  background-color: #ffffff;
+  width: 85%;
+  margin: 10px;
+  padding: 7px;
+  font-size: 20px;
+ }
+
+ .calculator-button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+.btn {
+  background-image: url('tut21_files/calculator.jpeg');
+   background-position: center;
+    background-repeat: no-repeat;
+  background-color: rgb(88, 98, 88) ;
+  cursor: pointer;
+  color:  #ffffff ;
+  width: 60px;
+  height: 50px;
+  margin: 3px;
+  font-size: 22px;
+}
+
+.btn:hover{
+  color: black;
+  box-shadow: 0px 0px 10px 10px rgb(88, 98, 88);
+}
+
+header, footer { padding: 20px; 
+  text-align: center; 
+  opacity: 0; 
+  animation: fadeIn 1s forwards;
+   animation-delay: 2s; 
+  }
+
+header {
+  font-size: 18px;
+   color: black;
+   }
+footer {
+  font-size: 18px;
+   color: black;
+    margin-top: 30px;
+   }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
